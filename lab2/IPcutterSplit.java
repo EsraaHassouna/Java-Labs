@@ -1,16 +1,31 @@
-package lab2;
+
 
 public class IPcutterSplit{
 	String cmdline;
-	IPcutterSplit(String cmdline){
-		String commandLine = "163.121.12.30";
+	IPcutterSplit(String cmdline2){
+		cmdline = cmdline2;
 	}
 
-	int doIpSplit(String cmdline){
-		String[] arr; 
-		for(int i=0;i<arr.length;i++){
-			arr[i] = cmdline.split("."); 
-		}		
+	String [] doIpSplit(){
+		
+		String [] arr = cmdline.split("\\."); 
+		//arr = Integer.parseInt(cmdline); 		
 		return arr;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
