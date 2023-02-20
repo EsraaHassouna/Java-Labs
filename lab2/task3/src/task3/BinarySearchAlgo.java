@@ -2,9 +2,10 @@
 package task3;
 
 public class BinarySearchAlgo {
+    // in Binary search to get results the array must be sorted
     // first represents first index of array
     // last represents last index of array
-    // search representa the element in which we will search
+    // search represent a the element in which we will search
     int recBinarySearch(int[] arr, int search, int first, int last){
         int mid = 0;
         /* first element of the array is greater than the last one
@@ -19,11 +20,11 @@ public class BinarySearchAlgo {
                 return recBinarySearch(arr, search, mid+1, last);               
             }            
             else if (search < arr[mid]){
-            // the search will locate in the left side of the array
+                 // the search will locate in the left side of the array
                 return recBinarySearch(arr, search, first, mid-1);
             }
             else if (search == arr[mid]){
-            //mid will be the number that we search for
+                //mid will be the number that we search for
                 return mid;
             }    
         }
@@ -47,7 +48,11 @@ public class BinarySearchAlgo {
                     first=mid+1; //4,4.5
                     mid=(first+last)/2;
             }     
+            System.out.println("the time needed for this task " + System.nanoTime());
+
         }   
+        
+            System.out.println("the time needed for this task " + System.nanoTime());
             return -1;
     }
 }
