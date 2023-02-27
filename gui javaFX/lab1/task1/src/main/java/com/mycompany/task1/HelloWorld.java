@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.PrimaryStage;
-import javafx.stage.Stage;
+//import javafx.stage.Stage;
 
 public class HelloWorld extends Application{
 
@@ -15,6 +15,7 @@ public class HelloWorld extends Application{
         Text Helloworld =new Text("Hello world FX !!!");
         StackPane sp =new StackPane(Helloworld);
         Scene scene=new Scene(sp,400,400);
+        PrimaryStage.setTitle("Hello World!!");
         PrimaryStage.setScene(scene);
         PrimaryStage.show();
     }
